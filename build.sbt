@@ -11,5 +11,5 @@ lazy val root = project
       // "-explain",
     )},
 
-    libraryDependencies += "org.scalameta" %% "munit" % "0.7.29" % Test
+    libraryDependencies += "org.scalameta" %% "munit" % "1.0.0-M8" % Test
   )
