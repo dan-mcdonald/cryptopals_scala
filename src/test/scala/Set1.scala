@@ -56,7 +56,7 @@ class Set1 extends munit.FunSuite {
   test("Challenge 6") {
     val inputLines = resourceLines("s1c6.txt")
     val ct = inputLines.mkString("").pipe(base64ToBytes)
-    val (key, pt) = breakXorRepeating(ct)
+    val (key, _) = breakXorRepeating(ct)
     val expected = "Terminator X: Bring the noise"
     val actual = key.pipe(bytesToAscii)
     assertEquals(actual, expected)
